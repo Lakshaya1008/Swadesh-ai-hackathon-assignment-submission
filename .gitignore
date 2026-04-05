@@ -1,0 +1,82 @@
+# Root-level .gitignore for the monorepo
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+.env.production
+
+# Dependencies
+node_modules/
+/.pnp
+.pnp.*
+
+# Build outputs
+dist/
+build/
+out/
+.next/
+.vercel
+.wrangler
+.alchemy
+
+# Package manager lockfiles (choose one for your project)
+# package-lock.json (if using npm - comment out if you want to commit)
+# yarn.lock (if using yarn)
+# pnpm-lock.yaml (if using pnpm)
+# bun.lockb (if using bun)
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-debug.log*
+replay_pid*.log
+
+# TypeScript
+*.tsbuildinfo
+*.tsconfig.tsbuildinfo
+
+# IDE & Editor
+.vscode/*
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/*.code-snippets
+.idea/*
+!.idea/runConfigurations
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# Testing
+/coverage
+
+# Local development
+.bucket/
+.cache/
+.eslintcache
+
+# Misc
+*.pem
+.turbo/
+.vercel
+dist
+out
+.react-router
+.nitro
+.vinxi
+.tanstack
+
+# OS specific
+Thumbs.db
+
