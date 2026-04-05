@@ -89,7 +89,20 @@ Sending the full recording at once (not per-chunk) gives Deepgram the full conte
 ---
 
 ## Local Setup
+## ⚡ Quick Start (Runs in 5 Minutes)
 
+1. Make sure Docker is running
+2. Copy env files:
+   cp apps/server/.env.example apps/server/.env
+   cp apps/web/.env.example apps/web/.env.local
+
+3. (Optional) Add Deepgram API key for transcription
+
+4. Run:
+   npm install
+   npm run db:start
+   npm run db:push
+   npm run dev
 ### Prerequisites
 
 - Node.js 18+
